@@ -21,7 +21,7 @@ const fields = [{
 
 var transfers = [];
 const parser = new Json2csvParser({ fields });
-var fileName = "Transfers_1718.csv";
+var fileName = "Transfers_16-17.csv";
 
 var options = {
         headers: {
@@ -42,14 +42,7 @@ var urls = [
     'https://www.transfermarkt.com/serie-a/transfers/wettbewerb/IT1/saison_id/2016',
     'https://www.transfermarkt.com/1-bundesliga/transfers/wettbewerb/L1/saison_id/2016',
     'https://www.transfermarkt.com/ligue-1/transfers/wettbewerb/FR1/saison_id/2016',
-    'https://www.transfermarkt.com/primeira-liga/transfers/wettbewerb/PO1/saison_id/2016',
-
-    'https://www.transfermarkt.com/premier-league/transfers/wettbewerb/GB1/saison_id/2015',
-    'https://www.transfermarkt.com/la-liga/transfers/wettbewerb/ES1/saison_id/2015',
-    'https://www.transfermarkt.com/serie-a/transfers/wettbewerb/IT1/saison_id/2015',
-    'https://www.transfermarkt.com/1-bundesliga/transfers/wettbewerb/L1/saison_id/2015',
-    'https://www.transfermarkt.com/ligue-1/transfers/wettbewerb/FR1/saison_id/2015',
-    'https://www.transfermarkt.com/primeira-liga/transfers/wettbewerb/PO1/saison_id/2015'
+    'https://www.transfermarkt.com/primeira-liga/transfers/wettbewerb/PO1/saison_id/2016'
 ]
 
 function isMainClub(club) {

@@ -4,8 +4,9 @@ from matplotlib import pyplot as plt
 
 def loadGraph():
 
-    with open('../data/Transfers_1718.csv', 'r') as csvfile:
+    with open('../data/Transfers_15-17.csv', 'r') as csvfile:
         data = csv.reader(csvfile, delimiter=',')
+        next(data)        
         G = nx.DiGraph()
         for row in data:
             player = row[0].decode("utf-8")
@@ -27,7 +28,10 @@ def drawGraph(graph):
 def showStats(graph):
     print "Nodes: " + str(len(graph.nodes(data=True)))
     print "Edges: " + str(len(graph.edges(data=True)))
+    #print "Triangles " + nx.triangles(graph)
+    sp = nx.shortest_path(graph, source="APOEL Nicosia", target="Juventus FC")
+    print(sp)
 
 G = loadGraph()
 showStats(G)
-drawGraph(G)
+#drawGraph(G)
