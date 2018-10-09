@@ -70,7 +70,7 @@ def scatter(list1, list2):
 
 getData()
 
-print("Pearson Correlation Coeficients: ")
+#print("Pearson Correlation Coeficients: ")
 
 print("Degree and Betweenness Centrality")
 correlations(degrees, betweennesses)
