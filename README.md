@@ -1,10 +1,7 @@
-## Football transfers from a social network analysis perspective
+# Social network analysis of football transfers
 
-#### To get the data from https://www.transfermarkt.com/:
-1. Navigate to FEUP-ARSI/scraper directory.
-2. Issue the following commands:
-```bash
-    npm install
-    node scraper.js
-```
-A .csv file will be generated under the directory FEUP-ARSI/data.
+## Instructions
+
+1. The transfers dataset is in the data/ folder.
+2. The social network analysis is in the docs/ folder.
+3. Two gephi checkpoints for the transfers graph are available in the gephi/ folder.
